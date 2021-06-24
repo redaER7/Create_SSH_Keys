@@ -3,21 +3,23 @@
 * [Choose an image](#Choose-an-image)
 * [Setup](#Setup)
 
+
 Linux-Remote Server are Linux-based virtual machines (VMs) that run on top of virtualized hardware
 VMs are managed using a terminal and SSH. You’ll need to have an SSH client and, optionally, an SSH key pair. Clients generally authenticate either using passwords (which are less secure and not recommended) or SSH keys (which are very secure and strongly recommended).
 We recommend you use SSH keys to connect to your VM.
----
+
+
 To log in to your VM with SSH, you need three pieces of information:
 •	The VM’s IP address
 •	The default username on the server
 •	Not recommended: The default password for that username, if you aren’t using SSH keys
----
+
 To get your VM’s IP address, visit your Provider Control Panel. The IP address is displayed in the IP Address column after your VM has been created.
 The default username is `root` on most operating systems, like Ubuntu and CentOS. Exceptions to this include CoreOS, where you’ll log in as `core`, Rancher, where you’ll log in as `rancher`, and FreeBSD, where you’ll log in as `freebsd`.
 
 OpenSSH is included on Linux, macOS, and Windows Subsystem for Linux.
 Windows users with Bash have access to OpenSSH, Windows users without Bash can use PuTTY.
----
+
 
 ## Create ssh Keys on your local machine MacOS/Linux
 Run the following command on terminal
